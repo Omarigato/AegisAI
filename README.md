@@ -1,2 +1,5 @@
-# AegisAI
-AegisAI is a modular red teaming framework for testing the security of LLM-controlled smart home and IoT systems against prompt-based and context manipulation attacks.
+AegisAI is an AI-based red teaming framework designed to evaluate the security and robustness of large language models (LLMs) used for controlling smart home and IoT systems. The framework simulates adversarial prompt-based attacks, such as prompt injection and context manipulation, to assess whether an LLM can be misled into performing unauthorized or unsafe actions.
+
+AegisAI operates as a modular and extensible framework that integrates with smart home platforms and virtual IoT devices, enabling controlled experimentation without affecting real-world infrastructure. It intercepts user commands, system logs, and sensor data, applies predefined or custom attack scenarios, and evaluates the LLM’s decision-making behavior against security policies.
+
+The framework provides structured attack execution, automated evaluation, and risk scoring, allowing researchers and developers to systematically analyze vulnerabilities in LLM-driven control systems. AegisAI aims to support the development of safer AI-powered smart home environments by identifying weaknesses before deployment and encouraging secure-by-design architectures.
