@@ -7,8 +7,8 @@ import NavBar from '../components/NavBar';
 const TEAM_MEMBERS = [
   {
     id: 1,
-    name: 'Аким Омар Айді',
-    nameEn: 'Akim Omar Aidi',
+    name: 'Аким Омар',
+    nameEn: 'Akim Omar',
     role: 'Project Lead & Full-Stack Developer',
     studentId: '34732',
     university: 'IITU — International Information Technology University',
@@ -16,7 +16,7 @@ const TEAM_MEMBERS = [
     skills: ['Python', 'FastAPI', 'React', 'Next.js', 'Three.js', 'AI/ML', 'Cybersecurity', 'WebSocket'],
     contacts: {
       email: '34732@iitu.edu.kz',
-      telegram: '@akim_omar',
+      telegram: '@Omarigato',
       university: 'IITU, Almaty, Kazakhstan',
     },
     color: '#00E5FF',
@@ -31,8 +31,8 @@ const TEAM_MEMBERS = [
     bio: 'Жоба бойынша шабуыл сценарийлері мен агенттік стратегияларды зерттейді. Негізгі бағыты — prompt injection және context poisoning шабуылдарының нақты әсерін көрсету.\n\nFocus: сценарий сапасын көтеру, Learning Journey контентін толықтыру және шабуыл визуализациясын қолданбалы ету.',
     skills: ['Cybersecurity', 'Prompt Engineering', 'Threat Modeling', 'LLM Safety', 'IoT Security'],
     contacts: {
-      email: 'arnur@iitu.edu.kz',
-      telegram: '@arnur',
+      email: '34312@iitu.edu.kz',
+      telegram: '@Arrnurrchiik',
       university: 'IITU, Almaty, Kazakhstan',
     },
     color: '#FF9F0A',
@@ -47,8 +47,8 @@ const TEAM_MEMBERS = [
     bio: '3D сахналар, IoT объект модельдері және интерактивті прототип беттерін әзірлеуге жауапты. Smart Home визуалын реалистік деңгейге жақындату бойынша жұмыс істейді.\n\nFocus: battle/view беттерінде объект сапасын арттыру және пайдаланушы командалары арқылы IoT құрылғыларын басқару прототипін дамыту.',
     skills: ['Three.js', 'React', 'UI/UX', 'IoT Systems', 'Frontend Architecture'],
     contacts: {
-      email: 'zhantore@iitu.edu.kz',
-      telegram: '@zhantore',
+      email: '34289@iitu.edu.kz',
+      telegram: '@Zhantoreeee',
       university: 'IITU, Almaty, Kazakhstan',
     },
     color: '#BF5AF2',
@@ -58,17 +58,17 @@ const TEAM_MEMBERS = [
 const PROJECT_INFO = {
   title: 'AegisAI — Smart Home Red Teaming Simulator',
   type: 'Diploma Project',
-  year: '2025',
+  year: '2026',
   university: 'International Information Technology University (IITU)',
   description:
     'An interactive AI-driven cybersecurity simulator that deploys adversarial AI agents to stress-test a simulated smart-home IoT environment. The system evaluates LLM responses to prompt injection, context manipulation, and privilege escalation attacks — providing real-time risk scoring and analytics.',
   technologies: [
-    { name: 'Frontend',  tech: 'Next.js 14 + React 18 + Three.js + Framer Motion' },
-    { name: 'Backend',   tech: 'FastAPI + Python + WebSocket' },
-    { name: 'AI/LLM',    tech: 'Groq (Llama 3.3) · Gemini · OpenRouter · GPT-4o' },
-    { name: '3D Scene',  tech: '@react-three/fiber + @react-three/drei + postprocessing' },
+    { name: 'Frontend', tech: 'Next.js 14 + React 18 + Three.js + Framer Motion' },
+    { name: 'Backend', tech: 'FastAPI + Python + WebSocket' },
+    { name: 'AI/LLM', tech: 'Groq (Llama 3.3) · Gemini · OpenRouter · GPT-4o' },
+    { name: '3D Scene', tech: '@react-three/fiber + @react-three/drei + postprocessing' },
     { name: 'Analytics', tech: 'Recharts + Real-time WebSocket data' },
-    { name: 'Security',  tech: 'Policy Engine + Risk Scoring + Stealth model' },
+    { name: 'Security', tech: 'Policy Engine + Risk Scoring + Stealth model' },
   ],
 };
 

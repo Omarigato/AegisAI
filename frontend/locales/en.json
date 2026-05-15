@@ -1,0 +1,201 @@
+{
+  "lang": "en",
+  "nav": {
+    "home": "Home",
+    "simulation": "Simulation",
+    "results": "Results",
+    "agents": "Agents",
+    "attacks": "Attacks",
+    "documentation": "Documentation",
+    "team": "Team"
+  },
+  "home": {
+    "badge": "AegisAI Research Framework",
+    "titleLine1": "AI-Based Red Teaming Framework",
+    "titleLine2": "for Smart Home & IoT LLMs",
+    "goal": "Research Goal",
+    "goalText": "Development of an AI-Based Red Teaming Framework for automated security testing of Large Language Models integrated into Smart Home and IoT environments.",
+    "description": "Brief Description",
+    "descText": "AegisAI simulates coordinated adversarial attacks against LLMs controlling IoT devices, evaluates model responses through a Policy Engine, assigns quantitative risk scores, and logs all results for academic analysis.",
+    "structure": "Thesis Structure",
+    "startBtn": "Start Simulation",
+    "dashboardBtn": "View Results",
+    "logsBtn": "Documentation",
+    "structureItems": [
+      {
+        "num": "1",
+        "title": "Introduction",
+        "sub": "Relevance, goals, research methods, scientific novelty"
+      },
+      {
+        "num": "2",
+        "title": "Literature Review",
+        "sub": "LLMs in IoT · Red Teaming · Smart Home Security"
+      },
+      {
+        "num": "3",
+        "title": "Framework Architecture",
+        "sub": "Agent System · IoT Simulator · Policy Engine · Risk Scoring"
+      },
+      {
+        "num": "4",
+        "title": "Experimental Results",
+        "sub": "Attack scenarios · LLM configurations · Statistical analysis"
+      },
+      {
+        "num": "5",
+        "title": "Conclusion",
+        "sub": "Findings · Limitations · Future research directions"
+      }
+    ]
+  },
+  "battle": {
+    "title": "Battle Arena",
+    "start": "Start Battle",
+    "reset": "Reset",
+    "inProgress": "In progress…",
+    "shield": "Shield",
+    "shieldActive": "Shield · {rounds}r",
+    "shieldCooldown": "Cooldown",
+    "counter": "Counter",
+    "deploying": "Deploying…",
+    "focusMode": "Focus",
+    "exitFocus": "Exit Focus",
+    "labels": "Labels",
+    "beams": "Beams",
+    "icons": "Icons",
+    "grid": "Grid",
+    "round": "Round",
+    "breach": "BREACH",
+    "block": "BLOCK",
+    "redTeam": "Red Team",
+    "activePipeline": "Attack Pipeline",
+    "riskScore": "Risk Score",
+    "idle": "Waiting for battle…",
+    "connected": "Connected",
+    "reconnecting": "Reconnecting…",
+    "battleStarted": "Battle started! Defender: {provider}",
+    "battleOver": "Battle over — {result}",
+    "redTeamWins": "RED TEAM WINS",
+    "defenseWins": "DEFENSE WINS",
+    "llmSwitched": "LLM switched to {provider}",
+    "shieldRaised": "SHIELD RAISED — {rounds} rounds",
+    "shieldExpired": "Shield expired",
+    "counterDeployed": "COUNTERMEASURES DEPLOYED"
+  },
+  "dashboard": {
+    "title": "Attack Telemetry",
+    "subtitle": "Real-time analytics from the AegisAI red-team simulator",
+    "refresh": "Refresh",
+    "totalAttacks": "Total Attacks",
+    "successful": "Successful",
+    "blocked": "Blocked",
+    "successRate": "Success Rate",
+    "tacticPerformance": "Tactic Performance",
+    "tacticSubtitle": "Win / loss per attack tactic",
+    "targetVulnerability": "Target Vulnerability",
+    "targetSubtitle": "% of attacks succeeded per device",
+    "attackTimeline": "Attack Timeline",
+    "timelineSubtitle": "Risk delta and outcomes over rounds",
+    "agentPerformance": "Agent Performance",
+    "agentSubtitle": "Success rate by red-team agent",
+    "cumulativeRisk": "Cumulative Risk Progression",
+    "cumulativeSubtitle": "Running risk score over all attacks",
+    "categoryEffectiveness": "Attack Category Effectiveness",
+    "categorySubtitle": "Bypass rate grouped by attack strategy",
+    "recentLog": "Recent Attack Log",
+    "recentSubtitle": "Last 20 recorded attacks",
+    "researchMetrics": "LLM Security Robustness Indicators",
+    "bypassRate": "LLM Bypass Rate",
+    "defenseRate": "Defense Rate",
+    "totalProbes": "Total Probes",
+    "tacticVariants": "Tactic Variants",
+    "noData": "No data — run a simulation first",
+    "loading": "Loading analytics…",
+    "connectionError": "Connection error: {error}",
+    "connectionHint": "Make sure the backend is running on port 8000."
+  },
+  "agents": {
+    "title": "AI Adversarial Agents",
+    "subtitle": "5 autonomous AI red-team agents organized in a 3-tier hierarchy",
+    "activeAgents": "Active Agents",
+    "totalTactics": "Total Tactics",
+    "hierarchyTiers": "Hierarchy Tiers",
+    "evolutions": "Evolutions Tracked",
+    "hierarchy": "Agent Hierarchy",
+    "watchInBattle": "Watch in Battle",
+    "seeAttacks": "See full Attack Taxonomy",
+    "capabilities": "Capabilities",
+    "weaknesses": "Weaknesses",
+    "targets": "Preferred Targets",
+    "tactics": "Attack Tactics",
+    "evolution": "Evolution Timeline"
+  },
+  "attacks": {
+    "title": "Adversarial Attack Catalog",
+    "subtitle": "{count} techniques across 5 attack categories",
+    "totalTechniques": "Total Techniques",
+    "categories": "Categories",
+    "criticalSeverity": "Critical Severity",
+    "agents": "Red-Team Agents",
+    "search": "Search techniques…",
+    "severity": "Severity",
+    "stealth": "Stealth",
+    "iotImpact": "IoT Impact",
+    "mechanism": "Mechanism",
+    "indicator": "Indicator",
+    "defense": "Defense",
+    "summary": "Summary",
+    "defenseStrategy": "Defense Strategy",
+    "techniques": "Techniques",
+    "agent": "Agent",
+    "seeAction": "See in Action"
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "AegisAI — Red Teaming Framework for LLMs in Smart Home & IoT",
+    "download": "Download Diploma (.docx)",
+    "source": "Source on GitHub"
+  },
+  "team": {
+    "title": "Project Team",
+    "subtitle": "{year} · {type} · {university}",
+    "about": "About the project",
+    "techStack": "Technology stack",
+    "skills": "Skills",
+    "try": "Try Simulation"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "bw": "B/W"
+  },
+  "llm": {
+    "multiMode": "MULTI-LLM",
+    "singleMode": "SINGLE-LLM",
+    "agentsUse": "AGENTS USE:",
+    "defenderLlm": "DEFENDER LLM:",
+    "free": "FREE",
+    "noKey": "No API key configured",
+    "noToken": "No API token",
+    "limitExceeded": "Rate limit exceeded",
+    "switchedTo": "Switched to {provider}"
+  },
+  "risk": {
+    "safe": "SAFE",
+    "elevated": "ELEVATED",
+    "critical": "CRITICAL",
+    "breach": "BREACH",
+    "level": "RISK LEVEL"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "playAgain": "Play Again",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel"
+  }
+}
