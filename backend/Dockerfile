@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════════════════════════════
-# AegisAI Backend — Dockerfile
+# ImperiumAI Backend — Dockerfile
 # Multi-stage build: builder → runtime
 # Base: python:3.11-slim  (~150 MB final image)
 # ═══════════════════════════════════════════════════════════════════════════

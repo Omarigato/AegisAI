@@ -1,5 +1,5 @@
 /**
- * Documentation page — AegisAI diploma.
+ * Documentation page — ImperiumAI diploma.
  *
  * - Sticky left sidebar with anchor navigation.
  * - 20 academic sections covering the framework end-to-end.
@@ -17,10 +17,10 @@ import NavBar from '../components/NavBar';
 import { AGENTS } from '../components/meta/agents';
 import { DEVICES } from '../components/meta/devices';
 
-const DIPLOMA_DOCX = '/docs/AegisAI_Diploma.docx';
-const DIPLOMA_PDF  = '/docs/AegisAI_Diploma.pdf';
-const README_PDF   = '/docs/AegisAI_README.pdf';
-const REPO_URL     = 'https://github.com/Omarigato/AegisAI';
+const DIPLOMA_DOCX = '/docs/ImperiumAI_Diploma.docx';
+const DIPLOMA_PDF  = '/docs/ImperiumAI_Diploma.pdf';
+const README_PDF   = '/docs/ImperiumAI_README.pdf';
+const REPO_URL     = 'https://github.com/Omarigato/ImperiumAI';
 
 const SECTIONS = [
   { id: 'overview',     title: '01 · Project Overview',         icon: BookOpen },
@@ -92,9 +92,9 @@ export default function DocumentationPage() {
             <div className="wv-eyebrow" style={{ marginBottom: 6, display: 'inline-flex', alignItems: 'center', gap: 6 }}>
               <BookOpen size={11} /> documentation
             </div>
-            <h1 className="wv-h1">AegisAI — Diploma Documentation</h1>
+            <h1 className="wv-h1">ImperiumAI — Diploma Documentation</h1>
             <p className="wv-body" style={{ marginTop: 8, maxWidth: 760, lineHeight: 1.6 }}>
-              <b>AegisAI</b> is an AI-Based Red Teaming Framework for security testing of
+              <b>ImperiumAI</b> is an AI-Based Red Teaming Framework for security testing of
               Large Language Models that control Smart-Home / IoT systems. It combines a
               multi-agent adversarial system, a policy engine, IoT simulation, and risk
               scoring into a single, presentable diploma artefact.
@@ -125,7 +125,7 @@ export default function DocumentationPage() {
                 maxWidth: 760,
               }}>
                 Diploma document will be available after adding{' '}
-                <code className="wv-mono">AegisAI_Diploma.docx</code> to{' '}
+                <code className="wv-mono">ImperiumAI_Diploma.docx</code> to{' '}
                 <code className="wv-mono">frontend/public/docs/</code>.
               </div>
             )}
@@ -199,7 +199,7 @@ export default function DocumentationPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14, minWidth: 0 }}>
             <Section id="overview" title="01 · Project Overview">
               <p>
-                AegisAI is a research-grade red-teaming framework that <i>attacks</i> an
+                ImperiumAI is a research-grade red-teaming framework that <i>attacks</i> an
                 LLM-controlled smart home from the inside.  Five autonomous adversarial
                 agents take turns trying to break the home, while a policy engine
                 evaluates every action and a risk engine quantifies the damage.  The
@@ -224,7 +224,7 @@ export default function DocumentationPage() {
                 <b> not</b> stress-test LLMs in this physical-impact context.
               </p>
               <p>
-                AegisAI addresses the gap by combining classical red-team methodology
+                ImperiumAI addresses the gap by combining classical red-team methodology
                 with LLM-specific attack vectors (prompt injection, context poisoning,
                 privilege escalation, gradual boundary erosion, network-level injection).
               </p>
@@ -236,7 +236,7 @@ export default function DocumentationPage() {
                 'IoT Analytics: 16B+ connected devices globally — the attack surface keeps growing.',
                 'ETSI EN 303 645 mandates security baselines for consumer IoT.',
                 'Real-world incidents: Ring camera hijacks, smart-lock bypasses, smart-fridge MITM.',
-                'AegisAI provides a reproducible benchmark for measuring LLM IoT robustness.',
+                'ImperiumAI provides a reproducible benchmark for measuring LLM IoT robustness.',
               ]} />
             </Section>
 
@@ -495,7 +495,7 @@ npm run dev
                   title="Diploma Document"
                   subtitle="Word .docx"
                   hint={docxAvailable === false
-                    ? 'Drop AegisAI_Diploma.docx into frontend/public/docs/.'
+                    ? 'Drop ImperiumAI_Diploma.docx into frontend/public/docs/.'
                     : 'Download the latest version of the diploma.'}
                 />
                 <DownloadCard
@@ -525,7 +525,7 @@ npm run dev
 
             <Section id="credits" title="21 · Visual Assets">
               <p>
-                AegisAI ships <b>without any third-party GLB models</b>. Both 3D scenes —
+                ImperiumAI ships <b>without any third-party GLB models</b>. Both 3D scenes —
                 the landing-page hero (<code className="wv-mono">components/HomeHero3D.jsx</code>)
                 and the Battle scene (<code className="wv-mono">components/SmartHome3D.jsx</code>) —
                 are fully procedural, generated at runtime from primitive Three.js
@@ -535,11 +535,11 @@ npm run dev
                 head={['Component', 'Type', 'Source', 'License']}
                 rows={[
                   ['HomeHero3D',     'Procedural Three.js scene (landing page)',
-                                     'Original — written for AegisAI', 'Project license'],
+                                     'Original — written for ImperiumAI', 'Project license'],
                   ['SmartHome3D',    'Procedural Three.js scene (Battle page)',
-                                     'Original — written for AegisAI', 'Project license'],
+                                     'Original — written for ImperiumAI', 'Project license'],
                   ['SceneTooltip',   'DOM overlay tooltip for the 3D scene',
-                                     'Original — written for AegisAI', 'Project license'],
+                                     'Original — written for ImperiumAI', 'Project license'],
                   ['Icon set',       'lucide-react',
                                      'https://lucide.dev/', 'ISC'],
                   ['Charts',         'recharts',

@@ -72,7 +72,7 @@ with every API route.
 In the live logs you should see:
 ```
 INFO  | app.memory.attack_memory | AttackMemory bound to: postgresql+psycopg://***@host:port/defaultdb?sslmode=require
-INFO  | aegisai                  | 🚀 AegisAI 2.0.0 started — LLM: simulation
+INFO  | imperiumai                  | 🚀 ImperiumAI 2.0.0 started — LLM: simulation
 ```
 
 If you instead see `Falling back to local SQLite at data/attack_memory.db` —

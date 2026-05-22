@@ -1,6 +1,6 @@
 /**
  * AttackPipeline.jsx
- * Visualises the AegisAI attack pipeline in 7 stages so a viewer can
+ * Visualises the ImperiumAI attack pipeline in 7 stages so a viewer can
  * understand *exactly* what happens "under the hood" during a battle round.
  *
  *  1. Red-Team Agent          – tactic selection

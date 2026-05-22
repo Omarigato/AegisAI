@@ -207,8 +207,8 @@ class OpenRouterClient(_OpenAICompatClient):
     base_url = "https://openrouter.ai/api/v1"
     default_model = DEFAULT_MODELS[LLMProvider.OPENROUTER]
     extra_headers = {
-        "HTTP-Referer": "https://aegisai.local",
-        "X-Title": "AegisAI Red Teaming Framework",
+        "HTTP-Referer": "https://imperiumai.local",
+        "X-Title": "ImperiumAI Red Teaming Framework",
     }
 
 

@@ -29,7 +29,7 @@ const TEAM_META = [
     studentId: 'IITU Student',
     skills: ['Cybersecurity', 'Prompt Engineering', 'Threat Modeling', 'LLM Safety', 'IoT Security'],
     contacts: {
-      email: '34312@iitu.edu.kz',
+      email: '35634@iitu.edu.kz',
       telegram: '@Arrnurrchiik',
       university: 'IITU, Almaty, Kazakhstan',
     },
@@ -42,7 +42,7 @@ const TEAM_META = [
     studentId: 'IITU Student',
     skills: ['Three.js', 'React', 'UI/UX', 'IoT Systems', 'Frontend Architecture'],
     contacts: {
-      email: '34289@iitu.edu.kz',
+      email: '34952@iitu.edu.kz',
       telegram: '@Zhantoreeee',
       university: 'IITU, Almaty, Kazakhstan',
     },

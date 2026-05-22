@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     )
 
     # ── App ─────────────────────────────────────────────────────────────────
-    app_name: str = "AegisAI"
+    app_name: str = "ImperiumAI"
     app_version: str = "2.0.0"
     debug: bool = False
 
@@ -55,7 +55,7 @@ class Settings(BaseSettings):
     # ── Database ─────────────────────────────────────────────────────────────
     # Two ways to configure storage:
     #   1) DATABASE_URL   — full SQLAlchemy URL (preferred for prod/Postgres).
-    #                       e.g. postgresql+psycopg://user:pass@host:5432/aegisai
+    #                       e.g. postgresql+psycopg://user:pass@host:5432/imperiumai
     #   2) DB_PATH        — local SQLite file (default, used when DATABASE_URL is empty).
     database_url: str = Field(default="", alias="DATABASE_URL")
     db_path: Path = Path("data/attack_memory.db")

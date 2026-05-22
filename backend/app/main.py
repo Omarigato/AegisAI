@@ -1,7 +1,7 @@
 """
 app/main.py
 ────────────
-AegisAI FastAPI application entry point.
+ImperiumAI FastAPI application entry point.
 
 Structure:
   app/
@@ -42,11 +42,11 @@ async def lifespan(app: FastAPI):
     container = init_container()
 
     import logging
-    logger = logging.getLogger("aegisai")
-    logger.info("🚀 AegisAI %s started — LLM: %s", settings.app_version,
+    logger = logging.getLogger("imperiumai")
+    logger.info("🚀 ImperiumAI %s started — LLM: %s", settings.app_version,
                 container.llm_router.get_status()["active"])
     yield
-    logger.info("AegisAI shutdown")
+    logger.info("ImperiumAI shutdown")
 
 
 def create_app() -> FastAPI:

@@ -1,5 +1,5 @@
 /**
- * Battle page — AegisAI diploma demo (v5 · procedural 3D, no GLB).
+ * Battle page — ImperiumAI diploma demo (v5 · procedural 3D, no GLB).
  *
  * Layout
  *   ┌──────────────┬──────────────────────────────┬─────────────────┐
@@ -140,7 +140,7 @@ export default function BattlePage() {
     wsService.connect();
 
     const unsubs = [
-      wsService.on('connected',    () => { setConnected(true);  addLog('System', 'Connected to AegisAI backend'); }),
+      wsService.on('connected',    () => { setConnected(true);  addLog('System', 'Connected to ImperiumAI backend'); }),
       wsService.on('disconnected', () => { setConnected(false); addLog('System', 'Reconnecting…'); }),
 
       wsService.on('attack_launched', (data) => {

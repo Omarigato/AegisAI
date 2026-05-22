@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════════════════════════════
-# AegisAI Frontend — Dockerfile
+# ImperiumAI Frontend — Dockerfile
 # Multi-stage: deps → builder → runtime
 # Base: node:20-alpine  (~120 MB final image)
 # ═══════════════════════════════════════════════════════════════════════════

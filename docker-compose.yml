@@ -1,7 +1,7 @@
 version: "3.9"
 
 # ═══════════════════════════════════════════════════════════════════════════
-# AegisAI — Docker Compose
+# ImperiumAI — Docker Compose
 #
 # Services:
 #   backend   FastAPI (port 8000)
@@ -22,7 +22,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
       target: runtime
-    container_name: aegisai-backend
+    container_name: imperiumai-backend
     restart: unless-stopped
     env_file:
       - ./backend/.env
@@ -37,11 +37,11 @@ services:
       #   • DATABASE_URL points at the local `db` service (Postgres).
       #   • DB_PATH is a SQLite fallback (used only if DATABASE_URL is unset).
       # Override either by editing ./backend/.env.
-      - DATABASE_URL=postgresql+psycopg://aegisai:aegisai@db:5432/aegisai
+      - DATABASE_URL=postgresql+psycopg://imperiumai:imperiumai@db:5432/imperiumai
       - DB_PATH=/app/data/attack_memory.db
     volumes:
       # Persist SQLite fallback across container restarts
-      - aegisai-data:/app/data
+      - imperiumai-data:/app/data
     ports:
       - "8000:8000"
     depends_on:
@@ -55,29 +55,29 @@ services:
       retries: 3
       start_period: 20s
     networks:
-      - aegisai-net
+      - imperiumai-net
 
   # ── PostgreSQL ─────────────────────────────────────────────────────────
   db:
     image: postgres:16-alpine
-    container_name: aegisai-db
+    container_name: imperiumai-db
     restart: unless-stopped
     environment:
-      - POSTGRES_USER=aegisai
-      - POSTGRES_PASSWORD=aegisai
-      - POSTGRES_DB=aegisai
+      - POSTGRES_USER=imperiumai
+      - POSTGRES_PASSWORD=imperiumai
+      - POSTGRES_DB=imperiumai
     volumes:
-      - aegisai-pg:/var/lib/postgresql/data
+      - imperiumai-pg:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U aegisai -d aegisai"]
+      test: ["CMD-SHELL", "pg_isready -U imperiumai -d imperiumai"]
       interval: 10s
       timeout: 5s
       retries: 5
       start_period: 10s
     networks:
-      - aegisai-net
+      - imperiumai-net
 
   # ── Frontend (Next.js) ──────────────────────────────────────────────────
   frontend:
@@ -88,7 +88,7 @@ services:
       args:
         # Next.js needs the API URL at build time for SSR
         - NEXT_PUBLIC_API_URL=http://localhost:8000
-    container_name: aegisai-frontend
+    container_name: imperiumai-frontend
     restart: unless-stopped
     environment:
       - NODE_ENV=production
@@ -99,18 +99,18 @@ services:
       backend:
         condition: service_healthy
     networks:
-      - aegisai-net
+      - imperiumai-net
 
 
 # ── Networks ─────────────────────────────────────────────────────────────
 networks:
-  aegisai-net:
+  imperiumai-net:
     driver: bridge
 
 
 # ── Volumes ──────────────────────────────────────────────────────────────
 volumes:
-  aegisai-data:
+  imperiumai-data:
     driver: local
-  aegisai-pg:
+  imperiumai-pg:
     driver: local

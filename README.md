@@ -1,6 +1,6 @@
 # ⚔ Imperium AI — Interactive AI Red Teaming Battle Simulator
 
-> formerly **Aegis AI**
+> formerly **Imperium AI**
 
 Imperium AI is a real-time browser-based simulator where five adversarial AI agents attack a simulated smart-home IoT system. Every attack flows through Groq / Gemini / OpenAI / DeepSeek (or a deterministic offline simulator), a policy engine, and a risk scorer — all visualised live with WebSockets, Three.js, and Framer Motion.
 

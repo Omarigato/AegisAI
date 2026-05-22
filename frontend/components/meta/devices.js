@@ -1,5 +1,5 @@
 /**
- * Shared device metadata for AegisAI.
+ * Shared device metadata for ImperiumAI.
  *
  * Every device that exists in `backend/iot/simulator.py` should have a row
  * here.  The mapping keeps the frontend (3D scene, side-tabs, documentation)

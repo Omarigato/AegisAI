@@ -1,6 +1,6 @@
-# AegisAI – `public/models/`
+# ImperiumAI – `public/models/`
 
-AegisAI **no longer bundles per-device GLB assets**. The only 3D scene that
+ImperiumAI **no longer bundles per-device GLB assets**. The only 3D scene that
 ships with the project lives on the landing page
 (`frontend/components/HomeHero3D.jsx`) and is fully procedural — built from
 primitive Three.js geometries at runtime. The Battle dashboard uses a 2D
